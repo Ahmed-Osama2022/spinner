@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ccc; */
+    background-color: #000;
+
+
+}
+.container {
+    padding: 50px 30%;
+    margin: auto 0;
+    /* background-color: #fff; */
+    border-radius: 30%;
+    animation: change 1.0s infinite ease;
+
+}
+span {
+    display: block;
+    font-size: 15em;
+    font-weight: bolder;
+}
+.one {
+    transform: rotate(80deg);
+    color: #ffa310 ;
+    
+}
+.two {
+    transform: rotate(-10deg);
+    margin-top: -255px;
+    margin-left: 130px;
+    color: purple;
+}
+.three {
+    transform: rotate(80deg);
+    margin-top: -90px;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: #fc0000;
+
+}
+.four {
+    transform: rotate(-10deg);
+    margin-top: -465px;
+    margin-left: -83px;
+    color: #0000fc;
+
+}
+
+/* Rotation for the spinner definition */
+@keyframes change {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+
+}
