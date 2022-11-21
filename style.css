@@ -11,16 +11,21 @@ body {
     align-items: center;
     /* background-color: #ccc; */
     background-color: #000;
-
-
+    overflow-y: hidden;
+    overflow-x:hidden;
+    
 }
 .container {
     padding: 50px 30%;
     margin: auto 0;
-    /* background-color: #fff; */
-    border-radius: 30%;
+    /*background-color: #fff;
+    */border-radius: 30%;
     animation: change 1.0s infinite ease;
-
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    -webkit-animation: change 1.0s infinite ease;
 }
 span {
     display: block;
@@ -29,14 +34,22 @@ span {
 }
 .one {
     transform: rotate(80deg);
+
     color: #ffa310 ;
-    
+    -webkit-transform:rotate(80deg);
+    -moz-transform:rotate(80deg);
+    -ms-transform:rotate(80deg);
+    -o-transform:rotate(80deg);
 }
 .two {
     transform: rotate(-10deg);
     margin-top: -255px;
     margin-left: 130px;
     color: purple;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
 }
 .three {
     transform: rotate(80deg);
@@ -44,14 +57,20 @@ span {
     margin-left: 10px;
     margin-right: 20px;
     color: #fc0000;
-
+    -webkit-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    -o-transform: rotate(80deg);
 }
 .four {
     transform: rotate(-10deg);
     margin-top: -465px;
     margin-left: -83px;
     color: #0000fc;
-
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
 }
 
 /* Rotation for the spinner definition */
@@ -59,10 +78,19 @@ span {
     0%
     {
         transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+
     }
     100%
     {
         transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+
+
     }
     
 
